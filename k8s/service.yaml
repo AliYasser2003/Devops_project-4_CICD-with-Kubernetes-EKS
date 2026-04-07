@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: project4-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: project4
   ports:
-    - port: 4000
+    - port: 80
       targetPort: 4000
       nodePort: 30008
