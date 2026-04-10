@@ -50,6 +50,14 @@ BACKEND
 **********
 ![App UI](BACKEND.png)
 
+Live Demo
+************
+FRONTEND: http://a8919917d1c5c474aadc9e0ea6601ba9-631009467.eu-north-1.elb.amazonaws.com/
+BACKEND: http://a8919917d1c5c474aadc9e0ea6601ba9-631009467.eu-north-1.elb.amazonaws.com/api
+********************************************************************************************************************************************************************
+The live demo is currently unavailable because the AWS EKS cluster was decommissioned to avoid ongoing infrastructure costs.
+This project was successfully deployed and tested using AWS EKS with a LoadBalancer service. The full CI/CD pipeline and 
+Kubernetes configuration are included in this repository and can be redeployed at any time.
 
 
 
