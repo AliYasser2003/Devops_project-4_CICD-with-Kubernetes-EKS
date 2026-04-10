@@ -42,7 +42,3 @@ jobs:
         run: |
           kubectl set image deployment/project4-deployment \
           project4-container=${{ secrets.DOCKER_USERNAME }}/project4-app:${{ github.sha }}
-
-      - name: Notify n8n
-        run: |
-          curl -X POST https://stanniferous-affectingly-madelene.ngrok-free.dev/webhook/deploy-status

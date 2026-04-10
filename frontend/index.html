@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 4</title>
+</head>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+
+  <h1>Project 4 Frontend</h1>
+  <button onclick="getMessage()">Get Message</button>
+
+  <p id="result">Click button to fetch from backend</p>
+
+  <script>
+    function getMessage() {
+      fetch("/api")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("result").innerText = data;
+        })
+        .catch(() => {
+          document.getElementById("result").innerText = "Error connecting";
+        });
+    }
+  </script>
+
+</body>
+</html>

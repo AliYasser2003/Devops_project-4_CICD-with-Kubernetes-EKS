@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: project4-container
-          image: alyyasser10/project4-app:latest
+          image: alyyasser10/project4-app:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 4000
