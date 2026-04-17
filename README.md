@@ -8,16 +8,16 @@ using Docker, Kubernetes (EKS), and GitHub Actions.
 Also the system includes a frontend UI and a backend API, exposed through a single entry point 
 using Kubernetes Ingress with path-based routing.
 
-### Architecture
+## Architecture
 ******************
 ![App UI](ARCHITECTURE.png)
 
-#### CI/CD Pipeline & how it works
+### CI/CD Pipeline & how it works
 **************************************
 GitHub Push -> GitHub Actions -> Docker Build -> DockerHub Push -> AWS EKS Deployment -> Updated Pods Running Automatically
 then users access the app via a single ELB URL.
 
-##### Technologies Used
+### Technologies Used
 ***************************
 - GitHub Actions (CI/CD)
 - Kubernetes (AWS EKS)
@@ -26,7 +26,7 @@ then users access the app via a single ELB URL.
 - Docker
 - Node.js (Backend API)
 
- ###### Features
+ ### Features
  *****************
  - Full CI/CD pipeline automation
  - Dockerized frontend and backend
@@ -34,7 +34,7 @@ then users access the app via a single ELB URL.
  - Ingress path-based routing: 	1)  "/"  ->frontend   2)  "/api"  ->backend
  - Single public entry point
 
-###### Key Learnings
+### Key Learnings
 ***********************
 -	Kubernetes Ingress vs LoadBalancer
 -	Debugging CrashLoopBackOff
@@ -42,15 +42,15 @@ then users access the app via a single ELB URL.
 -	Docker image versioning and deployment
 -	Service communication inside Kubernetes
 
-###### FRONTEND
+### FRONTEND
 *****************
 ![App UI](FRONTEND.png)
 
-###### BACKEND
+### BACKEND
 ******************
 ![App UI](BACKEND.png)
 
-###### Live Demo
+### Live Demo
 *******************
 FRONTEND: http://a8919917d1c5c474aadc9e0ea6601ba9-631009467.eu-north-1.elb.amazonaws.com/
 ********************************************************************************************************************************************************************
